@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
 
   def answer
     @question = params[:question]
-    @answer = coach_answer_enhanced(@question)
+    @answer = coach_answer(@question)
   end
 
   def coach_answer(your_message)
